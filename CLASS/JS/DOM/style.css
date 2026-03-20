@@ -1,0 +1,25 @@
+header{
+    background-color: rgb(207, 237, 147);
+    border: 1px solid rgb(6, 6, 10);
+    border-radius: 5px;
+}
+main{
+    background-color: gray;
+    border: 1px solid rgb(1, 1, 18);
+    border-radius: 5px;
+}
+footer{
+    background-color: rgb(249, 147, 147);
+    border: 1px solid rgb(7, 1, 1);
+    border-radius: 5px;
+}
+button{
+    background-color: blue;
+    color: white;
+}
+.paragraph{
+    color: rgb(10, 248, 57);
+}
+#header{
+    color: rgb(248, 3, 179);
+}
