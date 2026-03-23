@@ -1,0 +1,31 @@
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+}
+h3{
+    text-align: center;
+    font-weight: normal;
+}
+#p1{
+    text-align: right;
+}
+#p2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#p3{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
