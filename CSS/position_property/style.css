@@ -1,0 +1,38 @@
+div{
+    background-color: lightseagreen;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+#box1{
+    background-color: rgb(210, 241, 10);
+    position:static;
+}
+
+#box2{
+    background-color: rgb(231, 29, 49);
+    position:relative;
+    top: 500px;
+    left: 10px;
+}
+
+#box3{
+    background-color: rgb(11, 191, 251);
+    position:absolute;
+    top: 700px;
+}
+
+#box4{
+    background-color: rgb(12, 217, 56);
+    position:fixed;
+    top: 0;
+    left: 500px;
+}
+
+#box5{
+    background-color: rgb(12, 229, 236);
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,24 @@
+div{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    display: inline-block;
+    margin-left: 20px;
+}
+#box1{
+    background-image: url('/images/animal.jpeg');
+    background-size: cover;
+}
+#box2{
+    background-image: url('/images/bird.jpeg');
+    background-size: contain;
+}
+#box3{
+    background-image: url('/images/nature.jpeg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+#box4{
+    background-image: url('/images/river.jpeg');
+    background-size: cover;
+}

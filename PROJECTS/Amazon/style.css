@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    height: 60px;
+}
+
+#amazonlogo{
+    color: yellow;
+    font-size: 25px;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 20px;
+}
+#location{
+    color: white;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+#searchbox{
+    width: 700px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+#searchbutton{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#account{
+    color: white;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+#card{
+    color: white;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+a{
+    margin-right: 50px;
+}
+
+select{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header{
+    background-color:rgb(2, 2, 89);
+    height: 100px;
+}
+
+main{
+    background-color: rgba(248, 162, 2, 0.5);
+    height: 800px;
+}
+footer{
+    background-color: rgb(3, 1, 26, 0.5);
+    height: 200px;
+}
