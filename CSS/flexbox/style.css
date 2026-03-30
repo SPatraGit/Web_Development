@@ -8,7 +8,7 @@ div{
 
 .container {
     background-color: lightseagreen;
-    height: 200px;
+    height: 500px;
     width: 800px;
     margin: 50px auto;
     display: flex;
@@ -16,12 +16,15 @@ div{
     /*flex-direction: row-reverse;*/
     /*flex-direction: column;*/
     /*flex-direction: column-reverse;*/
-     justify-content: space-around;
+     /*justify-content: space-around;*/
+     /*flex-wrap: wrap;*/
+     align-items:flex-start;
+     /*align-content: center;*/
 }
 
 .item{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: 1px solid black;
 }
 
@@ -31,16 +34,21 @@ div{
 }
 #item2 {
     background-color: lightblue;
+    /*align-self: flex-start;
    
 }
 #item3 {
     background-color: lightgreen;
+    /*align-self: flex-end;*/
    
 }
 #item4 {
     background-color: lightyellow;
+    /*align-self: flex-end;*/
+    flex-shrink: 2;
    
 }
 #item5 {
     background-color: lightpink;
+    flex-grow: 3;
 }

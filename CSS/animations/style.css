@@ -1,0 +1,33 @@
+div{
+    background-color: rgb(7, 237, 99);
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    /* animation-name: colorchange; */
+    
+    /* animation-timing-function: ease-in-out; */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation-name: positionchange;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+/*@keyframes colorchange {
+    from {background-color: rgb(7, 237, 99);}
+    to {background-color: rgb(244, 10, 142);}
+}*/
+@keyframes positionchange {
+    from { 
+        left: 0px;
+        background-color: rgb(7, 237, 99);
+     }
+    to { 
+        left: 200px;
+        background-color: rgb(244, 10, 142);
+     }
+}

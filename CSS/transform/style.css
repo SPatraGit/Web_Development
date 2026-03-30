@@ -1,0 +1,19 @@
+div{
+    background-color: lightblue;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+div:hover{
+    background-color: lightgreen;
+     /* transform: scale(3,3); */
+    /* transform: rotate(180deg) scale(3,3); */
+    /* transform:translate(200px,100PX) ; */
+    transform: skew(45deg);
+}
