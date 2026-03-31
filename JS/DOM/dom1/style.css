@@ -1,7 +1,14 @@
+body{
+    background-color: rgb(43, 84, 4);
+}
 h1{
     background-color: aqua;
 }
 
 p{
-    
+    background-color: antiquewhite;
+}
+
+button{
+    background-color: rgb(237, 73, 73);
 }
