@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background:  
+    linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+    linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+    url('/images/netfilxbackgroundimage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    height: 120px;
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.nav-lang-signin{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.language{
+    color: white;
+    border: 0.1px solid rgb(96, 94, 94);
+    border-radius: 5px;
+    height: 32px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.language-select{
+    background-color: transparent;
+    color: white;
+    border:none;
+    outline: none;
+}
+
+.language:hover{
+    border: 2px solid white;
+}
+
+.signin-btn{
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 32px;
+    width: 77px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*header content*/
+.head-content{
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+.head-p1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.head-p2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.head-p3{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.head-input-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.head-input{
+    height: 56px;
+    width: 320px;
+    background: rgba(34, 32, 32, 0.6);
+    color: white;
+    align-content: center;
+}
+input{
+    height: 56px;
+    width: 320px;
+    padding: 14px;
+    font-size: 1rem;
+    background: rgba(29, 29, 29, 0.6);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 4px;
+    outline: none;
+}
+.get-started{
+    height: 56px;
+    width: 180px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: center;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+     color: white;
+}
+
+
+/*main content*/
+.border-section{
+   height: 6px;
+  background: linear-gradient(to right,#000000, #ff0057, #040404);
+
+  clip-path: ellipse(80% 100% at 50% 0%);
+}
+main{
+    background-color: #141414;
+}
+.main-content{
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+}
+.box{
+    height: 250px;
+    width: 200px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-left: 10px;
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+.trendingnow{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left: 180px;
+    margin-top: 40px
+}
+.more-reasons{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left: 180px;
+    margin-top: 40px;
+}
+
+/* Div Reason Section */
+.div-reason{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    
+}
+
+.reason{
+    height: 250px;
+    width: 280px;
+    background-color: #22024188;
+    margin-left: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.reason h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.reason p{
+    color:rgb(188, 170, 170);
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+.div-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.div-logo i{
+    font-size: 40px;
+    color: white;
+}
+
+
+/* Question Section */
+
+.questions{
+    height: 84px;
+    width: 1224px;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+}
