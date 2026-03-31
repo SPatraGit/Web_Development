@@ -230,10 +230,64 @@ main{
 /* Question Section */
 
 .questions{
-    height: 84px;
-    width: 1224px;
-    margin-top: 40px;
-    margin-left: 150px;
+    background-color: #141414;
+}
+.q{
+    height: 80px;
+    width: 1220px;
+    margin-left: 160px;
     margin-right: 150px;
+    margin-top: 10px;
+    background-color:#333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: white;
+    padding: 0 20px;
+
+}
+.q p{
+    font-size: 20px;
+}
+.q i{
+    font-size: 30px;
+}
+
+
+/* Footer Section */
+footer{
+    background-color: #141414;
+}
+
+.head-input-section{
+    padding-top: 20px;
+}
+
+.foot-div2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+.link{
+    color: white;
+    font-size: 16px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.link a{
+    color: white;
+}
+
+.netflixindia{
+    background-color: #141414;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
