@@ -1,179 +1,134 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog Site</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">SP</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Tour & Guide
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Packages</a></li>
-                <li><a class="dropdown-item" href="#">Support</a></li>
-                <li><a class="dropdown-item" href="#">Feedback</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Destinations</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
 
-    <div class="box m-5">
-      <div
-        class="row featurette d-flex justify-content-center align-items-center"
-      >
-        <div class="col-md-7 order-md-1">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Journey Diaries
-            <span class="text-body-secondary">– Explore Every Path</span>
-          </h2>
-          <p class="lead">
-            Travel is more than just reaching a destination—it’s about the
-            experiences along the way. Whether it’s the peaceful rhythm of a
-            train ride through scenic landscapes, the flexibility of a bus
-            journey connecting cities and villages, the thrill of flying high
-            above the clouds, or the calm beauty of a boat gliding across water,
-            every mode of travel offers a unique story. From land to sky to sea,
-            each journey brings new perspectives, unforgettable views, and
-            memories that last a lifetime.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-2">
-          <img
-            class="ime-fluid"
-            src="/images/Journey.png"
-            alt=""
-            height="500"
-            width="500"
-          />
-        </div>
-      </div>
-      <hr class="featurette-divider" />
-      <div
-        class="row featurette d-flex justify-content-center align-items-center mx-5"
-      >
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Taste & Refresh
-            <span class="text-body-secondary"
-              >– Food and Water Experiences</span
-            >
-          </h2>
-          <p class="lead">
-            A true journey is incomplete without exploring local flavors and
-            staying refreshed along the way. From delicious street food and
-            traditional cuisines to fresh fruits and regional dishes, every
-            destination offers a unique taste experience. Alongside food, clean
-            and refreshing drinking water, juices, and beverages keep travelers
-            energized and healthy. Together, food and water not only satisfy
-            hunger and thirst but also connect you deeply with the culture and
-            lifestyle of every place you visit.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img
-            class="ime-fluid"
-            src="/images/Hotels.png"
-            alt=""
-            height="500"
-            width="500"
-          />
-        </div>
-      </div>
-      <hr class="featurette-divider" />
-      <div
-        class="row featurette d-flex justify-content-center align-items-center"
-      >
-        <div class="col-md-7 order-md-1">
-          <h2 class="featurette-heading fw-normal lh-1">
-            Stay & Dine
-            <span class="text-body-secondary"
-              >– Hotels and Restaurants Experience</span
-            >
-          </h2>
-          <p class="lead">
-            A great journey is defined not only by the places you visit but also
-            by where you stay and dine. Comfortable hotels provide relaxation
-            and a home away from home, while restaurants offer a taste of local
-            and global cuisines. From luxury resorts to budget stays, and from
-            fine dining to street-side eateries, every experience adds comfort,
-            flavor, and unforgettable moments to your travel story.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-2">
-          <img
-            class="ime-fluid"
-            src="/images/Food_Drink.png"
-            alt=""
-            height="500"
-            width="500"
-          />
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tour & Guide
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Packages</a></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><a class="dropdown-item" href="#">Feedback</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Destinations</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
       </div>
     </div>
+  </nav>
 
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>
-        © 2010–2026 SP, Inc. · <a href="#">Privacy</a> ·
-        <a href="#">Terms</a>
-      </p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <div class="box m-5">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-1">
+        <h2 class="featurette-heading fw-normal lh-1">
+          Journey Diaries
+          <span class="text-body-secondary">– Explore Every Path</span>
+        </h2>
+        <p class="lead">
+          Travel is more than just reaching a destination—it’s about the
+          experiences along the way. Whether it’s the peaceful rhythm of a
+          train ride through scenic landscapes, the flexibility of a bus
+          journey connecting cities and villages, the thrill of flying high
+          above the clouds, or the calm beauty of a boat gliding across water,
+          every mode of travel offers a unique story. From land to sky to sea,
+          each journey brings new perspectives, unforgettable views, and
+          memories that last a lifetime.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-2">
+        <img class="ime-fluid" src="/images/Journey.png" alt="" height="500" width="500" />
+      </div>
+    </div>
+    <hr class="featurette-divider" />
+    <div class="row featurette d-flex justify-content-center align-items-center mx-5">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">
+          Taste & Refresh
+          <span class="text-body-secondary">– Food and Water Experiences</span>
+        </h2>
+        <p class="lead">
+          A true journey is incomplete without exploring local flavors and
+          staying refreshed along the way. From delicious street food and
+          traditional cuisines to fresh fruits and regional dishes, every
+          destination offers a unique taste experience. Alongside food, clean
+          and refreshing drinking water, juices, and beverages keep travelers
+          energized and healthy. Together, food and water not only satisfy
+          hunger and thirst but also connect you deeply with the culture and
+          lifestyle of every place you visit.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="ime-fluid" src="/images/Hotels.png" alt="" height="500" width="500" />
+      </div>
+    </div>
+    <hr class="featurette-divider" />
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-1">
+        <h2 class="featurette-heading fw-normal lh-1">
+          Stay & Dine
+          <span class="text-body-secondary">– Hotels and Restaurants Experience</span>
+        </h2>
+        <p class="lead">
+          A great journey is defined not only by the places you visit but also
+          by where you stay and dine. Comfortable hotels provide relaxation
+          and a home away from home, while restaurants offer a taste of local
+          and global cuisines. From luxury resorts to budget stays, and from
+          fine dining to street-side eateries, every experience adds comfort,
+          flavor, and unforgettable moments to your travel story.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-2">
+        <img class="ime-fluid" src="/images/Food_Drink.png" alt="" height="500" width="500" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>
+      © 2010–2026 SP, Inc. · <a href="#">Privacy</a> ·
+      <a href="#">Terms</a>
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
