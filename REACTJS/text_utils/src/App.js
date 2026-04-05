@@ -5,7 +5,7 @@ import TextForm from './Components/TextForm';
 import About from './Components/About';
 import React, {useState} from 'react';
 import Alert from './Components/Alert';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -39,15 +39,17 @@ function App() {
   }
   return (
     <>
+    <BrowserRouter>
     <Navbar title = "TextUtils" contactText = "Contact Us" mode = {mode} changeMode = {changeMode}/>
     {/*<Navbar/>*/}
     <Alert alert = {alert}/>
-    <div className="container2 my-3">
-      <TextForm heading = "Enter Your text" mode = {mode} showAlert = {showAlert}/>
+    <div className="container my-3">
+       <Routes>
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/" element={<TextForm heading = "Enter Your text" mode = {mode} showAlert = {showAlert}/>} />
+      </Routes>
     </div>
-    {/*<div className="container1 my-3">
-      <About/>
-    </div>*/}
+   </BrowserRouter>
     </>
   );
 }
