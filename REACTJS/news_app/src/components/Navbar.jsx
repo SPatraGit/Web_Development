@@ -14,13 +14,31 @@ export default class Navbar extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                    <a className="nav-link" aria-current="page" href="/">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/">About</a>
+                                    <a className="nav-link" aria-current="page" href="/">About</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/">Contact Us</a>
+                                    <a className="nav-link" aria-current="page" href="/">Business</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" aria-current="page" href="/">Entertainment</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" aria-current="page" href="/">General</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" aria-current="page" href="/">Health</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" aria-current="page" href="/">Science</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" aria-current="page" href="/">Technology</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" aria-current="page" href="/">Sports</a>
                                 </li>
                             </ul>
                         </div>
