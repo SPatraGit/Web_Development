@@ -3,6 +3,7 @@ import NewsItem from "../NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from 'prop-types';
 
+
 export class News extends Component {
 
     static defaultProps = {
@@ -25,38 +26,62 @@ export class News extends Component {
         super(props);
         this.state = {
             articles : [],
-            loading : false,
+            spinner : false,
             page : 1
         }
         document.title = `${this.capitalized(this.props.category)} - ApnaNews`;
     }
 
 
-    async updateNews(){
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=06ce9556833a49ab83bac0aa7fc27626&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+   async updateNews(){
+    if (this.state.spinner) return; // FIX 2
+
+    try {
+        console.log("API KEY:", import.meta.env.VITE_NEWS_API);
+
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${import.meta.env.VITE_NEWS_API}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        
         this.setState({spinner: true});
+
         let data = await fetch(url);
         let parsedData = await data.json();
+
+        if (parsedData.status === "error") { // FIX 3
+            console.error("API ERROR:", parsedData.message);
+            this.setState({ spinner: false });
+            return;
+        }
+
         this.setState({
-            articles : parsedData.articles,
-            totalResults: parsedData.totalResults,
+            articles : parsedData.articles || [],
+            totalResults: parsedData.totalResults || 0,
             spinner: false
-        })
+        });
+
+    } catch (error) {
+        console.error(error);
+        this.setState({ spinner: false });
     }
+}
 
     async componentDidMount(){
        this.updateNews();
     }
 
 
-    handlePreviousClick = async () => {
-        this.setState({page : this.state.page -1 });
-        this.updateNews();
-    }
     handleNextClick = async () => {
-        this.setState({page : this.state.page +1 });
-        this.updateNews();
-    }
+    this.setState(
+        (prevState) => ({ page: prevState.page + 1 }),
+        this.updateNews
+    );
+};
+
+    handlePreviousClick = async () => {
+        this.setState(
+            (prevState) => ({ page: prevState.page - 1 }),
+            this.updateNews
+        );
+    };
 
     render() {
         return (
@@ -72,7 +97,7 @@ export class News extends Component {
                 </div>
                 <div className="container d-flex justify-content-between">
                     <button disabled = {this.state.page<=1} type="button" className="btn btn-success" onClick={this.handlePreviousClick}> &larr; Previous</button>
-                    <button disabled = {this.state.page+1 > Math.ceil(this.state.totalResults/this.props.pageSize)} type="button" className="btn btn-success" onClick={this.handleNextClick}> Next &rarr; </button>
+                    <button disabled = {this.state.page+1 > Math.ceil((this.state.totalResults || 0)/this.props.pageSize)} type="button" className="btn btn-success" onClick={this.handleNextClick}> Next &rarr; </button>
                 </div>
             </div>
         )
